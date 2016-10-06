@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bluetooth01"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            >
+            <Button
+            android:id="@+id/OpenBluetoothBtn"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="#5555ff"
+            android:text="开启蓝牙"
+            />
+            <Button
+                android:id="@+id/LetSearchBtn"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:background="#5555ff"
+                android:layout_weight="1"
+                android:text="允许搜索"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/clientServersText"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textColor="#00ff00"
+                android:background="#144840"
+                android:maxLines="3"
+                android:scrollbars="vertical"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+            <Button
+            android:id="@+id/selectDeviceBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+                android:layout_weight="1"
+            android:background="#5555ff"
+            android:text="选择第一个设备"
+                android:layout_gravity="left"
+            />
+            <Button
+                android:id="@+id/CancelBond"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:text="解除绑定"
+                android:background="#5555ff"
+                android:layout_gravity="right" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/device"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="#00ff00"
+                android:background="#144840"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:weightSum="1">
+            <EditText
+                android:id="@+id/SendEdit"
+                android:textColor="#00ff00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#146840"
+                android:hint="请输入："
+                android:layout_weight="0.89" />
+            <Button
+                android:id="@+id/SenBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5555ff"
+                android:text="发送"/>
+                </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+            <TextView
+                android:id="@+id/MessageTV"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#00ff00"
+                android:maxLines="2"
+                android:scrollbars="vertical"
+                android:background="#144840"
+                />
+        <TextView
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#44ff44"
+            android:text="接收到的信息:"
+            />
+        <TextView
+            android:id="@+id/RecTV"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:maxLines="6"
+            android:textColor="#00ff00"
+            android:scrollbars="vertical"
+            android:background="#144840"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
